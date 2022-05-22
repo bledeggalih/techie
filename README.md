@@ -1,2 +1,2 @@
 # Tech.ie
-Techie Project
+A CRUD website application for electronic digital device repair services developed using the ASP.NET framework with C# language
