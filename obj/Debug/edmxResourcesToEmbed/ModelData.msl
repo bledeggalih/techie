@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MainDataModelStoreContainer" CdmEntityContainer="MainDataEntities">
+    <EntitySetMapping Name="DetailProductTransactions">
+      <EntityTypeMapping TypeName="MainDataModel.DetailProductTransaction">
+        <MappingFragment StoreEntitySet="DetailProductTransaction">
+          <ScalarProperty Name="DetailTransactionId" ColumnName="DetailTransactionId" />
+          <ScalarProperty Name="HeaderTransactionId" ColumnName="HeaderTransactionId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HeaderProductTransactions">
+      <EntityTypeMapping TypeName="MainDataModel.HeaderProductTransaction">
+        <MappingFragment StoreEntitySet="HeaderProductTransaction">
+          <ScalarProperty Name="HeaderProductTransactionId" ColumnName="HeaderProductTransactionId" />
+          <ScalarProperty Name="TransactionProductDate" ColumnName="TransactionProductDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTables">
+      <EntityTypeMapping TypeName="MainDataModel.OrderTable">
+        <MappingFragment StoreEntitySet="OrderTable">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderBuyerName" ColumnName="OrderBuyerName" />
+          <ScalarProperty Name="OrderSellerName" ColumnName="OrderSellerName" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="OrderPriceTotal" ColumnName="OrderPriceTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductTables">
+      <EntityTypeMapping TypeName="MainDataModel.ProductTable">
+        <MappingFragment StoreEntitySet="ProductTable">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="ProductStock" ColumnName="ProductStock" />
+          <ScalarProperty Name="ProductPicture" ColumnName="ProductPicture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreTables">
+      <EntityTypeMapping TypeName="MainDataModel.StoreTable">
+        <MappingFragment StoreEntitySet="StoreTable">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreEmail" ColumnName="StoreEmail" />
+          <ScalarProperty Name="StorePassword" ColumnName="StorePassword" />
+          <ScalarProperty Name="StoreProfilePicture" ColumnName="StoreProfilePicture" />
+          <ScalarProperty Name="StorePhoneNumber" ColumnName="StorePhoneNumber" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="StoreGrade" ColumnName="StoreGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTables">
+      <EntityTypeMapping TypeName="MainDataModel.UserTable">
+        <MappingFragment StoreEntitySet="UserTable">
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="UserCountry" ColumnName="UserCountry" />
+          <ScalarProperty Name="UserState" ColumnName="UserState" />
+          <ScalarProperty Name="UserCity" ColumnName="UserCity" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserBirthDate" ColumnName="UserBirthDate" />
+          <ScalarProperty Name="UserProfilePicture" ColumnName="UserProfilePicture" />
+          <ScalarProperty Name="UserPhoneNumber" ColumnName="UserPhoneNumber" />
+          <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTables">
+      <EntityTypeMapping TypeName="MainDataModel.ServiceTable">
+        <MappingFragment StoreEntitySet="ServiceTable">
+          <ScalarProperty Name="LaptopType" ColumnName="LaptopType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ServiceProblem" ColumnName="ServiceProblem" />
+          <ScalarProperty Name="ServiceBrand" ColumnName="ServiceBrand" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

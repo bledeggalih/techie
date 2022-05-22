@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MainDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DetailProductTransaction">
+          <Key>
+            <PropertyRef Name="DetailTransactionId" />
+          </Key>
+          <Property Name="DetailTransactionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HeaderTransactionId" Type="int" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HeaderProductTransaction">
+          <Key>
+            <PropertyRef Name="HeaderProductTransactionId" />
+          </Key>
+          <Property Name="HeaderProductTransactionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionProductDate" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderTable">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderBuyerName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OrderSellerName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OrderDate" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="OrderQty" Type="int" Nullable="false" />
+          <Property Name="OrderPriceTotal" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductTable">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ProductPrice" Type="int" Nullable="false" />
+          <Property Name="ProductStock" Type="int" Nullable="false" />
+          <Property Name="ProductPicture" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServiceTable">
+          <Key>
+            <PropertyRef Name="ServiceId" />
+          </Key>
+          <Property Name="ServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ServiceBrand" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ServiceProblem" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="LaptopType" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StoreTable">
+          <Key>
+            <PropertyRef Name="StoreId" />
+          </Key>
+          <Property Name="StoreId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StoreName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StoreEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StorePassword" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StoreProfilePicture" Type="varchar(max)" Nullable="false" />
+          <Property Name="StorePhoneNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="StoreAddress" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="StoreGrade" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserPassword" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserGender" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="UserBirthDate" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserProfilePicture" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserPhoneNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserAddress" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="UserRole" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserCity" Type="varchar" MaxLength="100" />
+          <Property Name="UserState" Type="varchar" MaxLength="100" />
+          <Property Name="UserCountry" Type="varchar" MaxLength="100" />
+          <Property Name="PostCode" Type="char" MaxLength="5" />
+        </EntityType>
+        <Association Name="FK__DetailPro__Heade__5CD6CB2B">
+          <End Role="HeaderProductTransaction" Type="Self.HeaderProductTransaction" Multiplicity="1" />
+          <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HeaderProductTransaction">
+              <PropertyRef Name="HeaderProductTransactionId" />
+            </Principal>
+            <Dependent Role="DetailProductTransaction">
+              <PropertyRef Name="HeaderTransactionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetailPro__Produ__5DCAEF64">
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="1" />
+          <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTable">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="DetailProductTransaction">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ServiceTa__UserI__160F4887">
+          <End Role="UserTable" Type="Self.UserTable" Multiplicity="1" />
+          <End Role="ServiceTable" Type="Self.ServiceTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserTable">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="ServiceTable">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MainDataModelStoreContainer">
+          <EntitySet Name="DetailProductTransaction" EntityType="Self.DetailProductTransaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HeaderProductTransaction" EntityType="Self.HeaderProductTransaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderTable" EntityType="Self.OrderTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductTable" EntityType="Self.ProductTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServiceTable" EntityType="Self.ServiceTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StoreTable" EntityType="Self.StoreTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserTable" EntityType="Self.UserTable" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__DetailPro__Heade__5CD6CB2B" Association="Self.FK__DetailPro__Heade__5CD6CB2B">
+            <End Role="HeaderProductTransaction" EntitySet="HeaderProductTransaction" />
+            <End Role="DetailProductTransaction" EntitySet="DetailProductTransaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetailPro__Produ__5DCAEF64" Association="Self.FK__DetailPro__Produ__5DCAEF64">
+            <End Role="ProductTable" EntitySet="ProductTable" />
+            <End Role="DetailProductTransaction" EntitySet="DetailProductTransaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ServiceTa__UserI__160F4887" Association="Self.FK__ServiceTa__UserI__160F4887">
+            <End Role="UserTable" EntitySet="UserTable" />
+            <End Role="ServiceTable" EntitySet="ServiceTable" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MainDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DetailProductTransaction">
+          <Key>
+            <PropertyRef Name="DetailTransactionId" />
+          </Key>
+          <Property Name="DetailTransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HeaderTransactionId" Type="Int32" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="HeaderProductTransaction" Relationship="Self.FK__DetailPro__Heade__5CD6CB2B" FromRole="DetailProductTransaction" ToRole="HeaderProductTransaction" />
+          <NavigationProperty Name="ProductTable" Relationship="Self.FK__DetailPro__Produ__5DCAEF64" FromRole="DetailProductTransaction" ToRole="ProductTable" />
+        </EntityType>
+        <EntityType Name="HeaderProductTransaction">
+          <Key>
+            <PropertyRef Name="HeaderProductTransactionId" />
+          </Key>
+          <Property Name="HeaderProductTransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionProductDate" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="DetailProductTransactions" Relationship="Self.FK__DetailPro__Heade__5CD6CB2B" FromRole="HeaderProductTransaction" ToRole="DetailProductTransaction" />
+        </EntityType>
+        <EntityType Name="OrderTable">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderBuyerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderSellerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderQty" Type="Int32" Nullable="false" />
+          <Property Name="OrderPriceTotal" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductTable">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductPrice" Type="Int32" Nullable="false" />
+          <Property Name="ProductStock" Type="Int32" Nullable="false" />
+          <Property Name="ProductPicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="DetailProductTransactions" Relationship="Self.FK__DetailPro__Produ__5DCAEF64" FromRole="ProductTable" ToRole="DetailProductTransaction" />
+        </EntityType>
+        <EntityType Name="StoreTable">
+          <Key>
+            <PropertyRef Name="StoreId" />
+          </Key>
+          <Property Name="StoreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StoreName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StoreEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StorePassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StoreProfilePicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StorePhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StoreAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StoreGrade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserGender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserBirthDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserProfilePicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserPhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserRole" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserCity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="UserState" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="UserCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PostCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="ServiceTables" Relationship="MainDataModel.FK__ServiceTa__UserI__01142BA1" FromRole="UserTable" ToRole="ServiceTable" />
+        </EntityType>
+        <Association Name="FK__DetailPro__Heade__5CD6CB2B">
+          <End Role="HeaderProductTransaction" Type="Self.HeaderProductTransaction" Multiplicity="1" />
+          <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HeaderProductTransaction">
+              <PropertyRef Name="HeaderProductTransactionId" />
+            </Principal>
+            <Dependent Role="DetailProductTransaction">
+              <PropertyRef Name="HeaderTransactionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetailPro__Produ__5DCAEF64">
+          <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="1" />
+          <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProductTable">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="DetailProductTransaction">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MainDataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DetailProductTransactions" EntityType="Self.DetailProductTransaction" />
+          <EntitySet Name="HeaderProductTransactions" EntityType="Self.HeaderProductTransaction" />
+          <EntitySet Name="OrderTables" EntityType="Self.OrderTable" />
+          <EntitySet Name="ProductTables" EntityType="Self.ProductTable" />
+          <EntitySet Name="StoreTables" EntityType="Self.StoreTable" />
+          <EntitySet Name="UserTables" EntityType="Self.UserTable" />
+          <AssociationSet Name="FK__DetailPro__Heade__5CD6CB2B" Association="Self.FK__DetailPro__Heade__5CD6CB2B">
+            <End Role="HeaderProductTransaction" EntitySet="HeaderProductTransactions" />
+            <End Role="DetailProductTransaction" EntitySet="DetailProductTransactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetailPro__Produ__5DCAEF64" Association="Self.FK__DetailPro__Produ__5DCAEF64">
+            <End Role="ProductTable" EntitySet="ProductTables" />
+            <End Role="DetailProductTransaction" EntitySet="DetailProductTransactions" />
+          </AssociationSet>
+          <EntitySet Name="ServiceTables" EntityType="MainDataModel.ServiceTable" />
+          <AssociationSet Name="FK__ServiceTa__UserI__01142BA1" Association="MainDataModel.FK__ServiceTa__UserI__01142BA1">
+            <End Role="UserTable" EntitySet="UserTables" />
+            <End Role="ServiceTable" EntitySet="ServiceTables" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="ServiceTable">
+          <Key>
+            <PropertyRef Name="ServiceId" />
+          </Key>
+          <Property Name="ServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ServiceBrand" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ServiceProblem" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserTable" Relationship="MainDataModel.FK__ServiceTa__UserI__01142BA1" FromRole="ServiceTable" ToRole="UserTable" />
+          <Property Name="LaptopType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK__ServiceTa__UserI__01142BA1">
+          <End Type="MainDataModel.UserTable" Role="UserTable" Multiplicity="1" />
+          <End Type="MainDataModel.ServiceTable" Role="ServiceTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserTable">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="ServiceTable">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MainDataModelStoreContainer" CdmEntityContainer="MainDataEntities">
+          <EntitySetMapping Name="DetailProductTransactions">
+            <EntityTypeMapping TypeName="MainDataModel.DetailProductTransaction">
+              <MappingFragment StoreEntitySet="DetailProductTransaction">
+                <ScalarProperty Name="DetailTransactionId" ColumnName="DetailTransactionId" />
+                <ScalarProperty Name="HeaderTransactionId" ColumnName="HeaderTransactionId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HeaderProductTransactions">
+            <EntityTypeMapping TypeName="MainDataModel.HeaderProductTransaction">
+              <MappingFragment StoreEntitySet="HeaderProductTransaction">
+                <ScalarProperty Name="HeaderProductTransactionId" ColumnName="HeaderProductTransactionId" />
+                <ScalarProperty Name="TransactionProductDate" ColumnName="TransactionProductDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderTables">
+            <EntityTypeMapping TypeName="MainDataModel.OrderTable">
+              <MappingFragment StoreEntitySet="OrderTable">
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="OrderBuyerName" ColumnName="OrderBuyerName" />
+                <ScalarProperty Name="OrderSellerName" ColumnName="OrderSellerName" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+                <ScalarProperty Name="OrderPriceTotal" ColumnName="OrderPriceTotal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductTables">
+            <EntityTypeMapping TypeName="MainDataModel.ProductTable">
+              <MappingFragment StoreEntitySet="ProductTable">
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+                <ScalarProperty Name="ProductStock" ColumnName="ProductStock" />
+                <ScalarProperty Name="ProductPicture" ColumnName="ProductPicture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StoreTables">
+            <EntityTypeMapping TypeName="MainDataModel.StoreTable">
+              <MappingFragment StoreEntitySet="StoreTable">
+                <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+                <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+                <ScalarProperty Name="StoreEmail" ColumnName="StoreEmail" />
+                <ScalarProperty Name="StorePassword" ColumnName="StorePassword" />
+                <ScalarProperty Name="StoreProfilePicture" ColumnName="StoreProfilePicture" />
+                <ScalarProperty Name="StorePhoneNumber" ColumnName="StorePhoneNumber" />
+                <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+                <ScalarProperty Name="StoreGrade" ColumnName="StoreGrade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserTables">
+            <EntityTypeMapping TypeName="MainDataModel.UserTable">
+              <MappingFragment StoreEntitySet="UserTable">
+                <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+                <ScalarProperty Name="UserCountry" ColumnName="UserCountry" />
+                <ScalarProperty Name="UserState" ColumnName="UserState" />
+                <ScalarProperty Name="UserCity" ColumnName="UserCity" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+                <ScalarProperty Name="UserBirthDate" ColumnName="UserBirthDate" />
+                <ScalarProperty Name="UserProfilePicture" ColumnName="UserProfilePicture" />
+                <ScalarProperty Name="UserPhoneNumber" ColumnName="UserPhoneNumber" />
+                <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+                <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServiceTables">
+            <EntityTypeMapping TypeName="MainDataModel.ServiceTable">
+              <MappingFragment StoreEntitySet="ServiceTable">
+                <ScalarProperty Name="LaptopType" ColumnName="LaptopType" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ServiceProblem" ColumnName="ServiceProblem" />
+                <ScalarProperty Name="ServiceBrand" ColumnName="ServiceBrand" />
+                <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

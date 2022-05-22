@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MainDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DetailProductTransaction">
+    <Key>
+      <PropertyRef Name="DetailTransactionId" />
+    </Key>
+    <Property Name="DetailTransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HeaderTransactionId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HeaderProductTransaction" Relationship="Self.FK__DetailPro__Heade__5CD6CB2B" FromRole="DetailProductTransaction" ToRole="HeaderProductTransaction" />
+    <NavigationProperty Name="ProductTable" Relationship="Self.FK__DetailPro__Produ__5DCAEF64" FromRole="DetailProductTransaction" ToRole="ProductTable" />
+  </EntityType>
+  <EntityType Name="HeaderProductTransaction">
+    <Key>
+      <PropertyRef Name="HeaderProductTransactionId" />
+    </Key>
+    <Property Name="HeaderProductTransactionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionProductDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="DetailProductTransactions" Relationship="Self.FK__DetailPro__Heade__5CD6CB2B" FromRole="HeaderProductTransaction" ToRole="DetailProductTransaction" />
+  </EntityType>
+  <EntityType Name="OrderTable">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderBuyerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderSellerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderQty" Type="Int32" Nullable="false" />
+    <Property Name="OrderPriceTotal" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductTable">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProductPrice" Type="Int32" Nullable="false" />
+    <Property Name="ProductStock" Type="Int32" Nullable="false" />
+    <Property Name="ProductPicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DetailProductTransactions" Relationship="Self.FK__DetailPro__Produ__5DCAEF64" FromRole="ProductTable" ToRole="DetailProductTransaction" />
+  </EntityType>
+  <EntityType Name="StoreTable">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StoreEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StorePassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StoreProfilePicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StorePhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StoreAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StoreGrade" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserTable">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserGender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserBirthDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserProfilePicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserPhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserRole" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserCity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UserState" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UserCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PostCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="ServiceTables" Relationship="MainDataModel.FK__ServiceTa__UserI__01142BA1" FromRole="UserTable" ToRole="ServiceTable" />
+  </EntityType>
+  <Association Name="FK__DetailPro__Heade__5CD6CB2B">
+    <End Role="HeaderProductTransaction" Type="Self.HeaderProductTransaction" Multiplicity="1" />
+    <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HeaderProductTransaction">
+        <PropertyRef Name="HeaderProductTransactionId" />
+      </Principal>
+      <Dependent Role="DetailProductTransaction">
+        <PropertyRef Name="HeaderTransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailPro__Produ__5DCAEF64">
+    <End Role="ProductTable" Type="Self.ProductTable" Multiplicity="1" />
+    <End Role="DetailProductTransaction" Type="Self.DetailProductTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductTable">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="DetailProductTransaction">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MainDataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DetailProductTransactions" EntityType="Self.DetailProductTransaction" />
+    <EntitySet Name="HeaderProductTransactions" EntityType="Self.HeaderProductTransaction" />
+    <EntitySet Name="OrderTables" EntityType="Self.OrderTable" />
+    <EntitySet Name="ProductTables" EntityType="Self.ProductTable" />
+    <EntitySet Name="StoreTables" EntityType="Self.StoreTable" />
+    <EntitySet Name="UserTables" EntityType="Self.UserTable" />
+    <AssociationSet Name="FK__DetailPro__Heade__5CD6CB2B" Association="Self.FK__DetailPro__Heade__5CD6CB2B">
+      <End Role="HeaderProductTransaction" EntitySet="HeaderProductTransactions" />
+      <End Role="DetailProductTransaction" EntitySet="DetailProductTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailPro__Produ__5DCAEF64" Association="Self.FK__DetailPro__Produ__5DCAEF64">
+      <End Role="ProductTable" EntitySet="ProductTables" />
+      <End Role="DetailProductTransaction" EntitySet="DetailProductTransactions" />
+    </AssociationSet>
+    <EntitySet Name="ServiceTables" EntityType="MainDataModel.ServiceTable" />
+    <AssociationSet Name="FK__ServiceTa__UserI__01142BA1" Association="MainDataModel.FK__ServiceTa__UserI__01142BA1">
+      <End Role="UserTable" EntitySet="UserTables" />
+      <End Role="ServiceTable" EntitySet="ServiceTables" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ServiceTable">
+    <Key>
+      <PropertyRef Name="ServiceId" />
+    </Key>
+    <Property Name="ServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceBrand" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ServiceProblem" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserTable" Relationship="MainDataModel.FK__ServiceTa__UserI__01142BA1" FromRole="ServiceTable" ToRole="UserTable" />
+    <Property Name="LaptopType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__ServiceTa__UserI__01142BA1">
+    <End Type="MainDataModel.UserTable" Role="UserTable" Multiplicity="1" />
+    <End Type="MainDataModel.ServiceTable" Role="ServiceTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTable">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="ServiceTable">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

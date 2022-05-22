@@ -1,0 +1,297 @@
+C:\Developer\AspNET\Techie\Techie\bin\Techie.dll.config
+C:\Developer\AspNET\Techie\Techie\bin\Techie.dll
+C:\Developer\AspNET\Techie\Techie\bin\Techie.pdb
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.exe
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.exe.config
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.rsp
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.exe
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.exe.config
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.rsp
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.AppContext.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Collections.Immutable.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Console.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Compression.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.FileSystem.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Pipes.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Reflection.Metadata.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.AccessControl.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Claims.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.ValueTuple.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XPath.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.exe
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.exe.config
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.rsp
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\VBCSCompiler.exe
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\VBCSCompiler.exe.config
+C:\Developer\AspNET\Techie\Techie\bin\Antlr3.Runtime.dll
+C:\Developer\AspNET\Techie\Techie\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Developer\AspNET\Techie\Techie\bin\AspNet.ScriptManager.jQuery.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.Web.Infrastructure.dll
+C:\Developer\AspNET\Techie\Techie\bin\Newtonsoft.Json.dll
+C:\Developer\AspNET\Techie\Techie\bin\System.Web.Optimization.dll
+C:\Developer\AspNET\Techie\Techie\bin\WebGrease.dll
+C:\Developer\AspNET\Techie\Techie\bin\System.Web.Optimization.xml
+C:\Developer\AspNET\Techie\Techie\bin\Newtonsoft.Json.xml
+C:\Developer\AspNET\Techie\Techie\bin\Antlr3.Runtime.pdb
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Developer\AspNET\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.csprojAssemblyReference.cache
+C:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.csproj.CoreCompileInputs.cache
+C:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.csproj.CopyComplete
+C:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.dll
+C:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.pdb
+C:\Developer\AspNET\Techie\Techie\bin\EntityFramework.dll
+C:\Developer\AspNET\Techie\Techie\bin\EntityFramework.SqlServer.dll
+C:\Developer\AspNET\Techie\Techie\bin\EntityFramework.xml
+C:\Developer\AspNET\Techie\Techie\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Techie.dll.config
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Techie.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Techie.pdb
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csc.exe
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csc.exe.config
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csc.rsp
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csi.exe
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csi.exe.config
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\csi.rsp
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.AppContext.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Console.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.IO.Compression.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Claims.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.ValueTuple.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\vbc.exe
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\vbc.exe.config
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\vbc.rsp
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\VBCSCompiler.exe
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Antlr3.Runtime.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\EntityFramework.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\EntityFramework.SqlServer.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Newtonsoft.Json.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\System.Web.Optimization.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\WebGrease.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\EntityFramework.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\System.Web.Optimization.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Newtonsoft.Json.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Antlr3.Runtime.pdb
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\obj\Debug\Techie.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\obj\Debug\Techie.dll
+C:\Users\Asus\Documents\BINUS\Bimay\semester 4\Software Engineering\LEC\Project\Baru\Techie\Techie\obj\Debug\Techie.pdb
+E:\Techie\Techie\bin\Techie.dll.config
+E:\Techie\Techie\bin\Techie.dll
+E:\Techie\Techie\bin\Techie.pdb
+E:\Techie\Techie\bin\roslyn\csc.exe
+E:\Techie\Techie\bin\roslyn\csc.exe.config
+E:\Techie\Techie\bin\roslyn\csc.rsp
+E:\Techie\Techie\bin\roslyn\csi.exe
+E:\Techie\Techie\bin\roslyn\csi.exe.config
+E:\Techie\Techie\bin\roslyn\csi.rsp
+E:\Techie\Techie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Techie\Techie\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Techie\Techie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Techie\Techie\bin\roslyn\System.AppContext.dll
+E:\Techie\Techie\bin\roslyn\System.Collections.Immutable.dll
+E:\Techie\Techie\bin\roslyn\System.Console.dll
+E:\Techie\Techie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Techie\Techie\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Techie\Techie\bin\roslyn\System.IO.Compression.dll
+E:\Techie\Techie\bin\roslyn\System.IO.FileSystem.dll
+E:\Techie\Techie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Techie\Techie\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Techie\Techie\bin\roslyn\System.IO.Pipes.dll
+E:\Techie\Techie\bin\roslyn\System.Reflection.Metadata.dll
+E:\Techie\Techie\bin\roslyn\System.Security.AccessControl.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Claims.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Techie\Techie\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Techie\Techie\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Techie\Techie\bin\roslyn\System.ValueTuple.dll
+E:\Techie\Techie\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Techie\Techie\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Techie\Techie\bin\roslyn\System.Xml.XPath.dll
+E:\Techie\Techie\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Techie\Techie\bin\roslyn\vbc.exe
+E:\Techie\Techie\bin\roslyn\vbc.exe.config
+E:\Techie\Techie\bin\roslyn\vbc.rsp
+E:\Techie\Techie\bin\roslyn\VBCSCompiler.exe
+E:\Techie\Techie\bin\roslyn\VBCSCompiler.exe.config
+E:\Techie\Techie\bin\Antlr3.Runtime.dll
+E:\Techie\Techie\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Techie\Techie\bin\AspNet.ScriptManager.jQuery.dll
+E:\Techie\Techie\bin\EntityFramework.dll
+E:\Techie\Techie\bin\EntityFramework.SqlServer.dll
+E:\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Techie\Techie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Techie\Techie\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Techie\Techie\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Techie\Techie\bin\Microsoft.Web.Infrastructure.dll
+E:\Techie\Techie\bin\Newtonsoft.Json.dll
+E:\Techie\Techie\bin\System.Web.Optimization.dll
+E:\Techie\Techie\bin\WebGrease.dll
+E:\Techie\Techie\bin\EntityFramework.xml
+E:\Techie\Techie\bin\EntityFramework.SqlServer.xml
+E:\Techie\Techie\bin\System.Web.Optimization.xml
+E:\Techie\Techie\bin\Newtonsoft.Json.xml
+E:\Techie\Techie\bin\Antlr3.Runtime.pdb
+E:\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Techie\Techie\obj\Debug\Techie.csprojResolveAssemblyReference.cache
+E:\Techie\Techie\obj\Debug\Techie.dll
+E:\Techie\Techie\obj\Debug\Techie.pdb
+C:\Developer\AspNET\Techie\Techie\bin\roslyn\desktop.ini
+G:\Developer\AspNET\Techie\Techie\bin\Techie.dll.config
+G:\Developer\AspNET\Techie\Techie\bin\Techie.dll
+G:\Developer\AspNET\Techie\Techie\bin\Techie.pdb
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.exe
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.exe.config
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csc.rsp
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.exe
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.exe.config
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\csi.rsp
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\desktop.ini
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.AppContext.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Collections.Immutable.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Console.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Compression.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.FileSystem.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.IO.Pipes.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Reflection.Metadata.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.AccessControl.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Claims.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.ValueTuple.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XPath.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.exe
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.exe.config
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\vbc.rsp
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\VBCSCompiler.exe
+G:\Developer\AspNET\Techie\Techie\bin\roslyn\VBCSCompiler.exe.config
+G:\Developer\AspNET\Techie\Techie\bin\Antlr3.Runtime.dll
+G:\Developer\AspNET\Techie\Techie\bin\AspNet.ScriptManager.bootstrap.dll
+G:\Developer\AspNET\Techie\Techie\bin\AspNet.ScriptManager.jQuery.dll
+G:\Developer\AspNET\Techie\Techie\bin\EntityFramework.dll
+G:\Developer\AspNET\Techie\Techie\bin\EntityFramework.SqlServer.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.ScriptManager.MSAjax.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.ScriptManager.WebForms.dll
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.Web.Infrastructure.dll
+G:\Developer\AspNET\Techie\Techie\bin\Newtonsoft.Json.dll
+G:\Developer\AspNET\Techie\Techie\bin\System.Web.Optimization.dll
+G:\Developer\AspNET\Techie\Techie\bin\WebGrease.dll
+G:\Developer\AspNET\Techie\Techie\bin\EntityFramework.xml
+G:\Developer\AspNET\Techie\Techie\bin\EntityFramework.SqlServer.xml
+G:\Developer\AspNET\Techie\Techie\bin\System.Web.Optimization.xml
+G:\Developer\AspNET\Techie\Techie\bin\Newtonsoft.Json.xml
+G:\Developer\AspNET\Techie\Techie\bin\Antlr3.Runtime.pdb
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.AspNet.FriendlyUrls.xml
+G:\Developer\AspNET\Techie\Techie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.csprojAssemblyReference.cache
+G:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.csproj.CopyComplete
+G:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.dll
+G:\Developer\AspNET\Techie\Techie\obj\Debug\Techie.pdb

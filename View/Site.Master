@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Techie.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Tech.ie</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <link href="~/Assets/css/Style.css" rel="stylesheet" runat="server" type="text/css"/>
+    <link href="../Assets/css/Style.css" rel="stylesheet"/>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Assets/img/MainLogoIcon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <%--Internal css kalo bisa yah--%>
+    <style>
+        #menuBaru {
+            margin:0;
+            padding:0;
+            float:right;
+            margin-top:15px;
+            
+        }
+            #menuBaru li {
+                list-style:none;
+                display:inline-block;
+            }
+                #menuBaru li a {
+                    text-decoration:none;
+                    position:relative;
+                    color:#4f8ef2;
+                    font-size: 1.5rem;
+                    /*font-weight:70;*/
+                    /*font-family: sans-serif;*/
+                    display: block;
+                    overflow:hidden;
+                    transition:0.5s all;
+                    padding: 14px 10px;
+                    /*text-transform:uppercase;*/
+                }
+                #menuBaru li a:before {
+                    content: '';
+                    width:60px;
+                    position:absolute;
+                    border-bottom: 8px solid #4f8ef2;
+                    bottom:0;
+                    right: 350px;
+                    transition: 0.5s all;
+                }
+                    #menuBaru li a:hover:before {
+                        right:0;
+
+                    }
+        
+        #logoTechie {
+            height: 60px;
+        }
+
+        .searchBar {
+            padding:0px;
+            margin:0px;
+            width:50vw;
+        }
+        body{
+            background-color:#f4f4f7;
+        }
+        .footer {
+            /*position:relative;*/
+            display:block;
+            /*left:0;
+            bottom:0;*/
+            width:100%;
+            background-color:#313131;
+            text-align:center;
+            /*margin:0;
+            padding:0;*/
+            color:white;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            padding: 3em 0;
+            padding-top:42px;
+            padding-bottom:42px;
+        }
+
+        /*Loader*/
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        .socialMedia {
+            display: inline-block;
+            background-color: #2e3444;
+            border-radius: 5px;
+            padding-top: 5px!important;
+            padding-bottom: 5px!important;
+            padding-left: 10px!important;
+            padding-right: 10px!important;
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#313131;padding-bottom:5px;">
+                
+            <div class="container">
+                <%--<div style="float:right">
+                    <img src="../Assets/img/icon/phone.png" style="width:1.5vh; height: 20px;"/>
+                    <abbr title="Phone" style="color:white">0808080808</abbr>
+                </div>--%>
+                <div class="navbar-header">
+                    <%--<div class="navBar-logo">--%>
+                        <a id="logoLink" runat="server" href="Home.aspx"><img src="../Assets/img/NewLogo.png"/ style="margin-top:5px ;height:50px;vertical-align:central"></a>
+                    <%--</div>--%>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    &nbsp; 
+                </div>
+                 
+                <div class="navbar-collapse collapse">
+                    <%--<div>
+                        <asp:TextBox ID="searchBar" cssClass="searchBar" class="form-control" runat="server"></asp:TextBox>
+                        
+                    </div>--%>
+                    <ul class="nav navbar-nav" id="menuBaru" >
+                        <%--<li><a ID="MenuHome" runat="server" href="Home.aspx" style="color:white">Home</a></li>--%>
+                        <li><a ID="MenuReparation" runat="server" href="Reparation.aspx" style="color:white">Reparation</a></li>
+                        <li><a ID="MenuProudct" runat="server" href="Product.aspx" style="color:white">Product</a></li>
+                        <li><a ID="MenuMyStore" runat="server" href="MyStore.aspx" style="color:white">My Store</a></li>
+                        <li><a ID="MenuViewMember" runat="server" href="ViewMember.aspx" style="color:white">View Member</a></li>
+                        <li><a ID="MenuProfile" runat="server" href="Profile.aspx" style="color:white">Profile</a></li>
+                        <li><a ID="MenuLogin" runat="server" href="Login.aspx" style="color:white">Login</a></li>
+                        <li><a ID="MenuLogout" runat="server" href="Logout.aspx" style="color:white">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content backgroundColorNew" style="margin-top:30px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+               
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer class="footer">
+                <p>&copy; <%: DateTime.Now.Year %> - Tech.ie Corp. All Right Reserved | Background Artwork Designed by <a style="color:white;text-decoration:underline;" href="https://www.flaticon.com">Flaticon</a> / <a style="color:white;text-decoration:underline;" href="https://www.freepik.com">Freepik</a> | <a style="text-decoration:none;color:white" href="About.aspx">About Us</a><a style="text-decoration:none;color:white;padding-left:10px" href="Contact.aspx">Contact</a></p>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/tech.ierepair19/"><img src="../Assets/img/icon/instagram.png"/ style="width:30px; padding-right:10px;"></a>
+                    <a href="https://twitter.com/TechieRepair"><img src="../Assets/img/icon/twitter.png" style="width:30px; padding-right:10px;"/></a>
+                    <a href="https://www.youtube.com"><img src="../Assets/img/icon/youtube.png" style="width:30px"/></a>
+                    
+                </div>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
